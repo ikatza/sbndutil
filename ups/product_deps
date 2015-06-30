@@ -43,7 +43,7 @@ table_fragment_end
 product          version
 art             v1_14_03
 larbatch        v01_11_01
-lar1ndcode      v00_07_00
+#lar1ndcode      v00_07_00
 
 
 cetbuildtools	v4_12_05	-	only_for_build
@@ -52,10 +52,15 @@ end_product_list
 
 # We now define allowed qualifiers and the corresponding qualifiers for the depdencies.
 # Make a table by adding columns before "notes". 
-qualifier	art		larbatch	lar1ndcode	notes
-e6:debug	nu:e7:debug	-nq-	e7:debug
-e6:opt		nu:e7:opt	-nq-	e7:opt
-e6:prof		nu:e7:prof	-nq-	e7:prof
+#qualifier	art		larbatch	lar1ndcode	notes
+#e6:debug	nu:e7:debug	-nq-	e7:debug
+#e6:opt		nu:e7:opt	-nq-	e7:opt
+#e6:prof		nu:e7:prof	-nq-	e7:prof
+#end_qualifier_list
+qualifier	art		larbatch	notes
+e7:debug	nu:e7:debug	-nq-	#e7:debug
+e7:opt		nu:e7:opt	-nq-	#e7:opt
+e7:prof		nu:e7:prof	-nq-	#e7:prof
 end_qualifier_list
 
 # Preserve tabs and formatting in emacs and vi / vim:

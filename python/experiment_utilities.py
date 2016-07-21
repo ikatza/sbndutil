@@ -71,8 +71,8 @@ def get_sam_metadata(project, stage):
 def get_setup_script_path():
 
     OASIS_DIR="/cvmfs/oasis.opensciencegrid.org/sbnd/products/"
-    FERMIAPP_DIR="/grid/fermiapp/products/sbnd/"
-
+    #FERMIAPP_DIR="/grid/fermiapp/products/sbnd/"
+    FERMIAPP_DIR="/nashome/a/andrzejs/"
     if os.path.isfile(FERMIAPP_DIR+"setup_sbnd.sh"):
         setup_script = FERMIAPP_DIR+"setup_sbnd.sh"
     elif os.path.isfile(OASIS_DIR+"setup_sbnd.sh"):
